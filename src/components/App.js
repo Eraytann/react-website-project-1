@@ -5,15 +5,12 @@ import ContentPage from "./pages/ContentPage";
 import GalleryPage from "./pages/GalleryPage";
 import NewsContentPage from "./pages/NewsContentPage";
 
-function toUrlFriendly(str) {
-      return str.toLowerCase().replace(/\s+/g, "-");
-    }    
 
 export default function App(){
 return(
       <Router>
             <Routes>
-                  <Route path="/homepage" element={<Homepage/>}/>
+                  <Route path="/" element={<Homepage/>}/>
                   <Route path="/content-page" element={<ContentPage/>}/>
                   <Route path="/gallery-page" element={<GalleryPage/>}/>
                   <Route path="/news-content-page" element={<NewsContentPage/>}/>
